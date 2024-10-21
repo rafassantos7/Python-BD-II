@@ -7,7 +7,7 @@ class UsuarioRepository:
 
     def salvar_usuario(self, usuario: Usuario):
         self.session.add(usuario)
-        self.sessio.commit()
+        self.session.commit()
         self.session.refresh()
     
     def pesquisar_usuario(self, email:str):
